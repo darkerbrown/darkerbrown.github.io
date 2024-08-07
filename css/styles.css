@@ -46,8 +46,8 @@ body {
   display: flex;
   max-width: 1320px;
   min-height: 85vh;
-  align-items: flex-start;
-  flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   justify-content: center;
   /* padding-top: 5rem; */
 }
@@ -551,14 +551,32 @@ body {
   }
 
    .home-container {
-    background-image: url('assets/big-ship-dry-dock.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Adjust as needed */
+    background-image: url('../assets/big-ship-dry-dock.jpg')!important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    min-height: 100vh !important; /* Ensure the container has full viewport height */
+    width: 100% !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
   }
-  
+
+  .home-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px; /* Adjust the height as needed */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+  .home_card{
+    background: transparent;
+  }
+
   .home-image{
-    display: none;
+    display: none !important;
   }
 
   .about-container{
