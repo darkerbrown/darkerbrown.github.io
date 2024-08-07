@@ -550,15 +550,15 @@ body {
     padding-right: 0px;
   }
 
-  .home-image{
-    display: none;
-  }
-
-  .home-container {
+   .home-container {
     background-image: url('assets/big-ship-dry-dock.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 100vh; /* Adjust as needed */
+  }
+  
+  .home-image{
+    display: none;
   }
 
   .about-container{
