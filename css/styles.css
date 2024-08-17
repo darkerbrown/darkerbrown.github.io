@@ -233,7 +233,6 @@ body {
   align-items: center; /* Center items vertically */
   overflow-x: auto; /* Enable horizontal scrolling */
   padding: 6rem; /* Optional: Add some padding for aesthetics */
-  border-radius: 10px; /* Optional: Rounded corners */
   height: 500px; /* Adjust the height as needed */
 }
 
@@ -485,6 +484,10 @@ body {
   background-image: linear-gradient(135deg, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
 }
 
+.custom-link:hover {
+  color: hsl(0, 0%, 100%); /* Set your preferred hover color */
+}
+
 @media (max-width: 991px) {
  .home-container{
   padding-left: 3rem;
@@ -532,8 +535,15 @@ body {
   }
 
   .navbar-nav {
-      align-items: flex-end;
-      padding-right: 2rem;
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 2rem;
+    margin-top: 0.7rem;
+    box-shadow: 0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important;
+    backdrop-filter: saturate(200%) blur(30px);
+    background-color: hsla(0,0%,100%,.8);
+    border-radius: 1rem;
+   
   }
 
   .navbar-nav .nav-item {
@@ -581,15 +591,17 @@ body {
 
   .about-container{
     max-width: 720px;
+    margin: 0;
   }
 
   .about-main{
     align-items: center;
     flex-direction: column;
+    margin: 0;
   }
 
   .about-topright{
-    width: 80%;
+    width: 100%;
   }
 
   .img-topright-abt{
@@ -610,7 +622,8 @@ body {
 
 
   .about-left{
-    width: 80%;
+    width: 100%;
+    padding: 0rem;
   }
 
   .img-left-abt{

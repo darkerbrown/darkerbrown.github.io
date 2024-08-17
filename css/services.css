@@ -1,3 +1,61 @@
+  
+.navbar {
+  width: 80%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 40px;
+  padding-right: 1rem;
+  flex-direction: row;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important;
+  backdrop-filter: saturate(200%) blur(30px);
+  background-color: hsla(0,0%,100%,.6);
+}
+
+.navbar-toggler {
+  margin-left: auto; /* Move the toggler to the right */
+  flex-wrap: nowrap;
+  flex-direction: row;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none; /* Ensure no shadow on focus */
+  align-items: center;
+}
+
+.collapse.navbar-collapse {
+  flex-grow: 1;
+  justify-content: flex-end; /* Align the collapsed menu to the right */
+  
+}
+  
+  
+@media (max-width: 767px) {
+  .collapse.navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .navbar-nav {
+    align-items: flex-end;
+    padding-right: 2rem;
+    margin-top: 0.7rem;
+    box-shadow: 0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important;
+    backdrop-filter: saturate(200%) blur(30px);
+    background-color: hsla(0,0%,100%,.8);
+    border-radius: 1rem;
+  }
+
+  .navbar-nav .nav-item {
+      margin: 5px 0; /* Spacing between nav items */
+  }
+  
+}
+
 :root {
     --main-green: #79dd09;
     --main-green-rgb-015: rgba(121, 221, 9, 0.1);
@@ -15,61 +73,6 @@
     /* text-rendering: optimizeLegibility; */
     font-weight: initial;
   }
-
-  /* navbar styling */
-  
-  .navbar {
-    width: 80%;
-    height: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    border-radius: 40px;
-    padding-right: 1rem;
-    flex-direction: row;
-    padding-bottom: 0.5rem;
-    box-shadow: 0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important;
-    backdrop-filter: saturate(200%) blur(30px);
-    background-color: hsla(0,0%,100%,.6);
-  }
-  
-  .navbar-toggler {
-    margin-left: auto; /* Move the toggler to the right */
-    flex-wrap: nowrap;
-    flex-direction: row;
-    border: none;
-  }
-  
-  .navbar-toggler:focus {
-    box-shadow: none; /* Ensure no shadow on focus */
-    align-items: center;
-  }
-  
-  .collapse.navbar-collapse {
-    flex-grow: 1;
-    justify-content: flex-end; /* Align the collapsed menu to the right */
-    
-  }
-  
-  
-  @media (max-width: 767) {
-    .collapse.navbar-collapse {
-      justify-content: flex-end;
-    }
-  
-    .navbar-nav {
-      align-items: flex-end;
-      padding-right: 2rem;
-    }
-  
-    .navbar-nav .nav-item {
-        margin: 5px 0; /* Spacing between nav items */
-    }
-  }
-
-
 
   
   .light {
@@ -175,8 +178,16 @@
   .service:hover .service__bar {
     width: 100px;
   }
+
+  @media (max-width: 767px) {
+    .light{
+      margin: 0rem;
+      padding: 0.5rem;
+    }
+  }
   
   @media screen and (min-width: 769px) {
+    
     .service {
       flex-wrap: inherit;
     }
