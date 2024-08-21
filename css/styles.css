@@ -232,12 +232,12 @@ body {
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   overflow-x: auto; /* Enable horizontal scrolling */
-  padding: 6rem; /* Optional: Add some padding for aesthetics */
+  /* padding: 6rem; Optional: Add some padding for aesthetics */
   height: 500px; /* Adjust the height as needed */
 }
 
 .scroll-container > * {
-  flex-shrink: 0; /* Prevent items from shrinking */
+  /* flex-shrink: 0; Prevent items from shrinking */
   margin: 0 10px; /* Optional: Add some margin between items */
 }
 
@@ -485,7 +485,7 @@ body {
 }
 
 .custom-link:hover {
-  color: hsl(0, 0%, 100%); /* Set your preferred hover color */
+  color: hsl(226, 92%, 59%); /* Set your preferred hover color */
 }
 
 @media (max-width: 991px) {
@@ -520,8 +520,9 @@ body {
  }
 
  .scroll-container { 
-  justify-content: flex-start; /* Center items horizontally */
-  align-items: flex-start; /* Center items vertically */
+  /* justify-content: flex-start; Center items horizontally */
+  /* align-items: flex-start; Center items vertically */
+  overflow-x: scroll;
 }
 }
 

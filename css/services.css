@@ -33,9 +33,14 @@
   justify-content: flex-end; /* Align the collapsed menu to the right */
   
 }
-  
+.custom-link:hover {
+  color: hsl(226, 92%, 59%); /* Set your preferred hover color */
+}
   
 @media (max-width: 767px) {
+  .container{
+    margin-top: 40px;
+  }
   .collapse.navbar-collapse {
     justify-content: flex-end;
   }
